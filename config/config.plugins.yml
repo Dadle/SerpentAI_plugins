@@ -1,0 +1,4 @@
+SerpentKingdomGameAgentPlugin:
+  frame_handler: PLAY
+SerpentKingdomGamePlugin:
+  fps: 2
