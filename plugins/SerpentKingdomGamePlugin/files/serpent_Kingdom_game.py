@@ -5,8 +5,6 @@ from .api.api import KingdomAPI
 from serpent.utilities import Singleton
 
 
-
-
 class SerpentKingdomGame(Game, metaclass=Singleton):
 
     def __init__(self, **kwargs):
@@ -17,18 +15,18 @@ class SerpentKingdomGame(Game, metaclass=Singleton):
         kwargs["app_id"] = "368230"
         kwargs["app_args"] = None
         
-        
-        
 
         super().__init__(**kwargs)
 
         self.api_class = KingdomAPI
         self.api_instance = None
 
+
+
     @property
     def screen_regions(self):
         regions = {
-            "SAMPLE_REGION": (0, 0, 0, 0)
+            "WALLET": (21, 796, 141, 873)
         }
 
         return regions
